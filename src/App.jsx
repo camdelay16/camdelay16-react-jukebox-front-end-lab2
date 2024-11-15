@@ -89,6 +89,8 @@ const App = () => {
         handleFormView={handleFormView}
         handlePlayTrack={handlePlayTrack}
         isFormOpen={isFormOpen}
+        handleRemoveTrack={handleRemoveTrack}
+        selected={selected}
       />
       {isFormOpen ? (
         <TrackForm
@@ -97,13 +99,8 @@ const App = () => {
           selected={selected}
         />
       ) : (
-        <TrackDetail
-          selected={selected}
-          handleFormView={handleFormView}
-          handleRemoveTrack={handleRemoveTrack}
-        />
+        <NowPlaying currentTrack={currentTrack} />
       )}
-      <NowPlaying currentTrack={currentTrack} />
     </>
   );
 };

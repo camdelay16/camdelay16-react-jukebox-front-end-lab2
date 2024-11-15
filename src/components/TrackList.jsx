@@ -5,6 +5,8 @@ const TrackList = (props) => {
     isFormOpen,
     handleFormView,
     handlePlayTrack,
+    selected,
+    handleRemoveTrack,
   } = props;
 
   const tracks = trackList.map((track) => (
@@ -12,8 +14,12 @@ const TrackList = (props) => {
       key={track._id}
       onClick={() => updateSelected(track)}
     >
-      <li>{track.title}</li>
+      <li>
+        {track.title} - {track.artist}
+      </li>
       <button onClick={() => handlePlayTrack(track)}>Play</button>
+      <button onClick={() => handleFormView(selected)}>Edit</button>
+      <button onClick={() => handleRemoveTrack(selected._id)}>Delete</button>
     </a>
   ));
 

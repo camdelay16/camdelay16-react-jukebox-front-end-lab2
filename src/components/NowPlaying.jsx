@@ -4,9 +4,9 @@ const NowPlaying = ({ currentTrack }) => {
   }
   return (
     <>
-      <h2>Now Playing</h2>
-      <p>Name: {currentTrack.title}</p>
-      <p>Artist: {currentTrack.artist}</p>
+      <h1>Now Playing</h1>
+      <h2>Name: {currentTrack.title}</h2>
+      <h2>Artist: {currentTrack.artist}</h2>
     </>
   );
 };
