@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const TrackForm = (props) => {
-  const { selected, handleAddTrack } = props;
+  const { selected, handleAddTrack, handleUpdateTrack } = props;
 
   const initialState = {
     title: "",

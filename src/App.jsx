@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import TrackList from "./components/TrackList";
 import TrackForm from "./components/TrackForm";
-import TrackDetail from "./components/TrackDetail";
 import NowPlaying from "./components/NowPlaying";
 import * as trackService from "./services/trackService";
 
